@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Larke Regular';
+    src: url('../assets/fonts/LarkeRegular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Larke Regular;
+    color: white;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(36,35,35);
+    background: linear-gradient(180deg, rgba(36,35,35,1) 0%, rgba(48,48,48,1) 100%);
+    z-index: -1;
+}
+
+#back {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    transition: font-size 200ms;
+}
+
+#back:hover { 
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: max(3dvh, 30px);
+    font-size: max(4vw, 40px);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100vw;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+#main img {
+    width: max(20vw, 200px);
+    height: max(20vw, 200px);
+    padding: 1px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+h3, h4 {
+    font-size: max(1.5vw, 25px);
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.social {
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social p {
+    margin-left: 20px;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 200ms;
+}
+
+.social p:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+#credits {
+    display: flex;
+    flex-direction: column;
+}
+
+#credits a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 200ms;
+    cursor: pointer;
+}
+
+#credits a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+
+#copyright {
+    font-size: max(20px, 1vw);
+    margin-top: 5px;
+    text-align: center;
+}
+
+#spacer {
+    flex: 1;
+}
+
+footer {
+    margin-top: 20px;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    background-color: black;
+}
+
+footer p, footer a {
+    font-size: max(20px, 1vw);
+    margin: 2px 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (orientation: portrait) {
+    * {
+        text-align: center;
+    }
+
+    #main img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #main {
+        flex-direction: column-reverse;
+    }
+
+    #info {
+        width: 100vw;
+        justify-content: center;
+    }
+
+    #credits a {
+        text-align: center;
+    }
+
+    #socials {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Larke Regular';
+    src: url('assets/fonts/LarkeRegular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Larke Regular;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: max(3dvh, 30px);
+    font-size: max(4vw, 40px);
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(36,35,35);
+    background: linear-gradient(180deg, rgba(36,35,35,1) 0%, rgba(48,48,48,1) 100%);
+    z-index: -1;
+}
+
+#subjects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1240px;
+    margin: max(4.5dvh, 45px) auto;
+}
+
+#subjects a {
+    text-decoration: none;
+}
+
+
+.subject {
+    display: flex;
+    width: 300px;
+    padding: 20px 0;
+    padding-left: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    margin: 18px 30px;
+    background: linear-gradient(to left, transparent 50%, #94c0cda0 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+}
+
+.subject:hover {
+    background-position: left;
+}
+
+.subject img {
+    width: 100px;
+}
+
+.subject p {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+#spacer {
+    flex: 1;
+}
+
+footer {
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    width: 100vw;
+    background-color: black;
+}
+
+footer p, footer a {
+    font-size: max(20px, 1vw);
+    margin: 2px 10px;
+    text-align: center;
+    color: white;
+}
