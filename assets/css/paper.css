@@ -52,6 +52,21 @@ table {
     display: block;overflow-x: auto;
 }
 
+tr {
+    border: 1px solid white;
+}
+
+code {
+    background-color: #636262;
+}
+
+.mermaid * {
+    background-color: transparent;
+    fill: transparent!important;
+    stroke: #fafafa!important;
+}
+
+
 @media screen and (orientation: portrait) {
     #back {
         position: absolute;
