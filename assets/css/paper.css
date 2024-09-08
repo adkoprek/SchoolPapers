@@ -65,13 +65,6 @@ code {
     stroke: #fafafa!important;
 }
 
-.edgeLabel {
-    padding: 5px;
-    border-radius: 3px;
-    background-color: white!important;
-    color: black!important;
-}
-
 @media screen and (orientation: portrait) {
     #back {
         position: absolute;
