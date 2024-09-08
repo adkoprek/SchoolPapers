@@ -20,4 +20,5 @@ jobs:
           netlify deploy \
             --dir . \
             --site ${{ secrets.NETLIFY_SITE_ID }} \
-            --auth ${{ secrets.NETLIFY_API_TOKEN }}
+            --auth ${{ secrets.NETLIFY_API_TOKEN }} \
+            --prod
