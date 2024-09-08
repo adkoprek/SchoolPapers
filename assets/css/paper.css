@@ -61,11 +61,16 @@ code {
 }
 
 .mermaid * {
-    background-color: transparent;
     fill: transparent!important;
     stroke: #fafafa!important;
 }
 
+.edgeLabel {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white!important;
+    color: black!important;
+}
 
 @media screen and (orientation: portrait) {
     #back {
