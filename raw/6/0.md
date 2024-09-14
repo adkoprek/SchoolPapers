@@ -1,0 +1,231 @@
+# Introduction Algebra
+
+## Sets
+
+### You know what a set is
+
+A set is `collection` of **distinct** objects. These objects are called the elements or members of the set. A set is defined as a list of these elements encapsulated with these symbols $\{ your elemts \}$ and every element is separated with a `,` so the set of the numbers 3 and 4 is written in the `roster notation` as follows $\{3, 4\}$.
+
+If you have a big set that follows a clear pattern, you can use `...` to symbolize that the set continuous. Consider for example a set with all the positive integers. In words, you would say that this set contains the numbers 1, 2, 3 and so on. To convert this into a mathematic expression, you just have to substitute `and so on` for `...`. Following this, you would end up with a set that looks like this $\{1, 2, 3, ...\}$. You can also do this in the other direction, like for example $\{..., -2, -1, 0, 1, 2, ...\}$ this set would represent every integer.
+
+There also exists an `empty set` that can be written as $\{\}$ or $\emptyset$.
+
+### You know the operations that you can perform on sets
+
+Every of the following examples has two sets $A = \{2, 4, 6, 10\}$ and $B = \{2, 5, 10, 20\}$
+
+-   An `union` between two sets is all of their elements combined into one set and can be written like this $A \cup B$, pronounced as `A-cup-B`. With the example definitions above, this would be equal to $\{2, 4, 5, 6, 10, 20\}$.
+    
+-   Computing the `intersection` of two sets results in a set containing elements that both sets have in common and can be written like this $A \cap B$, pronounced as `A-cap-B`. With the example definitions above, this would equal $\{2, 10\}$.
+    
+-   The `difference` between two sets results in one set that contains every element of the first set that is not in the second one. This can be written as $A \setminus B$, pronounced as `A-minus-B`. With the example definition above, this would equal $\{4, 6\}$.
+
+### Sets of numbers
+
+-   The `natrual` $\N$ numbers are all bigger or equal to 0 and are integers
+    
+-   The `integers` $\Z$ numbers are all the integers
+    
+-   The `rational` $\mathbb{Q}$ numbers are all numbers that can be described by a fraction like $\frac{a}{b}$ where $a$ and $b$ are positive and $b$ is not equal to $0$
+    
+-   The `real` $\R$ contain all the remaining _conventional_ numbers.
+    
+-   The `complex` $\mathbb{C}$ numbers are a special set of numbers. That extent the number line with a y-axis. Complex numbers are written as $a+bi$ where $a$ and $b$ are real numbers. $a+bi$ can be compared to a point on a graph, where $a$ is the x-coordinates and $b$ the y-coordinates.
+    
+    $i$ is a special number in mathematics that is defined as the $\sqrt{-1}$ which can not exist because $-1² = 1$. $i$ can just be considered like the _unit_ on the y-axis
+    
+
+Please be aware that every number set contains all of its previous number sets like for example the rational numbers contains also the inters and natural numbers.
+
+## Positional notation of numbers
+
+### Binary into Decimal
+
+You can convert Binary numbers into decimal number with these simple steps
+
+-   Only to do at the beginning: Take the first binary digit
+    
+-   Double your number and add the next binary digit
+    
+-   Continue like this
+    
+
+This can be shown in a table going from left to right. In the first row we write all the digits of the binary number and in the bottom row we will keep track of the current result of our computations.
+
+| binary  | 1   | 1   | 0   | 1   |
+| ------- | --- | --- | --- | --- |
+| decimal | 1   | 3   | 6   | 13  |
+
+The bottom right cell is now your result. If you don't completely understand the procedure, this is what is calculated
+
+-   Take the first digit, in this case $1$
+    
+-   Double it and add the next digit, in this case also $1$ and write down the temporary result $3$ right from the previous temporary result
+    
+-   Take $3$ double it and add the next digit and your result in $6$
+    
+-   Then double it again and add the last digit, leaving you with $13$
+    
+
+### Decimal into Binary
+
+This can be solved very similarly to the last problem by just going backward.
+
+-   Only to do at the beginning: Take your decimal number and write it in the bottom right cell
+    
+-   If it is uneven, write down $1$ in the binary row and subtract $1$. If it is even just write a $0$
+    
+-   Divide it by 2 and write it left from your last number
+    
+-   Do this until your number becomes 0
+    
+
+The same example as in the table above can be explained with these steps
+
+-   Take $13$ and write it down, because it is uneven, write a $1$ and subtract $1$, then divide by two. The result $6$ can ten be written down left from the $13$
+    
+-   $6$ is even so you can write down a $0$ for the binary row and just divide $6$ by $2$, then you can write $3$ left from it
+    
+-   $3$ is uneven so you can write down $1$ and subtract $1$, then you can divide by $2$ leaving you with the decimal number $1$ to write down left from the previous result
+    
+-   $1$ is uneven, so write down a $1$ and subtract a $1$. The result of this operation is $0$ so you are done, but there is no need to write the $0$ down.
+    
+### Scientific notation
+
+Every number can be represented with the scientific notation
+$$
+a * 10^b
+$$
+Where $a$ is any number equal or bigger than $1$ but smaller than $10$. $b$ can be any negative or positive integer. If you want to write the number $0.000000005234$ for example in scientific notation. You have to move the decimal point until the new number satisfies the condition for $a$. In this case you have to move it $9$ times to the right resulting in $5.234$, this number becomes your $a$. When you put this together, you should be left with
+$$
+5.234 * 10^{-9}
+$$
+The exponent ($b$) has a minus in this example because we moved the decimal point to the **right**. When we would want to write a very big number in scientific notation, then we would move the decimal point to the left and $b$ would become positive.
+
+### Multiplication with scientific notation
+
+Suppose we have two numbers in scientific notation
+$$
+a * 10^b, \space c * 10^d 
+$$
+Then we can multiply them like this
+$$
+(a * 10^b) * (c * 10^d) = a * c * 10^{b + d} 
+$$
+Let's do an example
+$$
+(2.3 * 10⁵) * (3.5 * 10²) = 2.3 * 3.5 * 10^{5 + 2} = 8.05 * 10⁷
+$$
+If the result of $a * c$ becomes grater then 10 then you have to move your decimal point again until you get a valid number in scientific notation as described above.
+
+### Division with scientific notation
+
+Suppose we have two numbers in scientific notation
+$$
+a * 10^b, \space c * 10^d 
+$$
+Then we can divide them like this
+$$
+\frac{a * 10^b}{c * 10^d} = \frac{a}{c} * 10^{b - d}
+$$
+Let's do an example
+$$
+\frac{8.4 * 10^3}{2.4 * 10⁵} = \frac{8.4}{2.4} * 10^{3-5} = 3.4*10^{-2}
+$$
+Remember, if the result of $\frac{a}{c}$ becomes smaller than $1$ you have to adjust your number again until it meets the constraints for a number in scientific notation.
+
+## Basic arithmetic with some help of geometry
+
+### Addition and subtraction
+
+Let's imagine a point on the number line that represents the number $3$ now if we want to add the number $+2$ to it, we draw an arrow from $3$ pointing to the right with the length of $2$. This addition can be representing as shifting the entire number line from the origin of the arrow to its end. Please note that we are just shifting the line with our number $3$ on it, our scale stays where she is. So if we **just** shift the line by $2$ then our original number $3$ ends up on $5$.
+
+Subtracting would be the same operation, just with our arrow pointing left.
+
+### Multiplication
+
+Let's imagine the number $4$ as a point on the number line, and we want to multiply it with the number $2$. To achieve this we can stretch the number line by a factor of $2$ in both direction from the origin with our point representing the number $4$ on it. But same as with the addition, the scale stays in **place**. So when we stretch the number line with a factor of $2$ then the point that before represented $4$ now ends up on $8$.
+
+Multiplication with a negative number can be simplified into two operation. First we have to flip the entire number line around it origin, this operation accounts for the $-$ sign. Then we can stretch it as described above. Following this, multiplying a number with $-1$ and then again with $-1$ will give us a positive number because we flip the number line twice.
+
+## Inequalities
+
+Inequalities can be solved like every equation just by keeping this rules in mind.
+
+Let $a$ and $b$ be any real number
+
+If you multiply or divide both sides of an inequality with a negative number, then you have to flip the inequality sign. Take this as an example
+$$
+    a < b \space \space \space \space \space \space \space | * (-5) \\
+    -5a > -5b \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space
+$$
+
+## Linear equations with two variables
+
+A linear equation can be defined with this `slope-intercept` formula
+
+$$
+y = ax + b
+$$
+
+Where $x$ and $y$ are variables. The factor $a$ is the slope and $b$ is the Y-intercept.
+
+### Slope
+
+The slope of a linear equation defines by how much does the y-values changes between two points that are $1$ unit away from each other on the x-axis.
+
+Let's define two points $P = (4, 4)$ and $Q = (8, 2)$
+
+Then the slope can be computed as the y-difference between these points divided by the x-difference.
+
+$$
+a = \frac{\Delta y}{\Delta x} = \frac{y_p - y_q}{x_p - x_q} = \frac{4 - 2}{4-8}=-0.5
+$$
+
+ Please note that it doesn't matter if you subtract $Q$ from $P$ or $P$ from $Q$.
+
+### Y-intercept
+
+The y-intercept $b$ is added to every calculation, it is just an offset. The y-intercept can be directly determined when we are given a point, where $x = 0$ otherwise you can take any point and calculate it with this formula
+
+$$
+b = y - ax
+$$
+
+### Point-slope of a line
+
+If you don't want to calculate the Y-intercept, you can express a linear equation by just using the slope and two points.
+
+If we take the two points $P$ and $Q$ from the slope example above and the calculated slope $a = -0.5$ 
+
+Then we can write the equation as
+
+$$
+y-y_0=a(x-x_0)=y-4=-0.5(x-4)
+$$
+
+You can use any point for $y_0$ and $x_0$ it just has to be the same for both the x and y coordinates.
+
+### Standard Form
+
+Imagine we have a vertical line at $x=2$ how could we represent this with the standard-form equation ($y=ax+b$)? To achieve this $a$ would have to be infinite, so the slope doesn't make any sense. To express such a linear equation, we could just write $x = 2$ because $y$ can be any value.
+
+So for such cases we can use the standard form, written like this
+
+$$
+ax+by=c
+$$
+
+Please note that $a, b, c$ in the standard form are not the same as in the point-intercept from. This equation will even hold true for a vertical line because then we can just say that $a=1$, $b=0$ and $c$ is equal to the x coordinates where our vertical line is. Let's assume $2$. So the whole formula would be
+
+$$
+1*x+0*y=2
+$$
+
+Which we can simplify to
+
+$$
+x = 2
+$$
+
+
