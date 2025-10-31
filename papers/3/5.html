@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wetter & Klima</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  <link rel="stylesheet" href="../../assets/css/paper.css">
+  <link rel="icon" href="../../assets/drawable/logo_dark.svg"> 
+  <script src="../../assets/js/icon_2.js"></script>
+  <script src='https://unpkg.com/mermaid@8.1.0/dist/mermaid.min.js'></script>
+</head>
+
+<body class="stackedit">
+    <a href="../../geographie/geographie.html" id="back"><</a> 
+    <div id="background"></div>
+  <div class="stackedit__html"><h1 id="demography">Demography</h1>
+<h2 id="basic-terms">Basic Terms</h2>
+<h3 id="you-can-explain-and-use-important-demographic-terms-natural-growth-rate-net-migration-rate-growth-rate-crude-birthdeath-rate-doubling-time-replacement-level-life-expectancy-longevity-doubling-time-child-mortality-rate">You can explain and use important demographic terms: natural growth rate, net migration rate, growth rate, crude birth/death rate, doubling time, replacement level, life expectancy, longevity, doubling time, child mortality rate</h3>
+<ul>
+<li>
+<p>The <code>natrual growth rate</code> describes by how much a population changes in a time  span due to births and deaths and is calculated as their difference.</p>
+</li>
+<li>
+<p>The <code>net mirgration rate</code>  describes by how much a population changes in a time span due to immigration and emigration and is calculated as their difference.</p>
+</li>
+<li>
+<p>The <code>growth rate</code> describes by how much a population changes in a time span as the sum of natural growth rate and net migration rate.</p>
+</li>
+<li>
+<p>The <code>crude birth/death rates</code> are the number of births or respectively deaths per <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1000</mn></mrow><annotation encoding="application/x-tex">1000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1000</span></span></span></span></span> Population.</p>
+</li>
+<li>
+<p>The <code>doubling time</code> is the time a population takes to double in population. As a rule of thumb, the doubling times is around <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>70</mn><mi>g</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{70}{g}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.32622em; vertical-align: -0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.845108em;"><span class="" style="top: -2.655em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span style="margin-right: 0.03588em;" class="mord mathnormal mtight">g</span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.394em;"><span class="pstrut" style="height: 3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">70</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.481108em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>, where <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.625em; vertical-align: -0.19444em;"></span><span style="margin-right: 0.03588em;" class="mord mathnormal">g</span></span></span></span></span> is the population growth at some point in time in percent.</p>
+</li>
+<li>
+<p>The <code>replacment level</code> is the fertility rate that is needed in order that a population  can sustain itself or replace itself in one generation.</p>
+</li>
+<li>
+<p>The <code>life expectancy</code> can be measured from different ages and describes the average or the forecasted time left in a human life at that age.</p>
+</li>
+<li>
+<p>The term <code>longevity</code> describes how long a person or population lives.</p>
+</li>
+<li>
+<p>The <code>child mortality rate</code> describes the number of children of age five or younger that die in a time span in a population.</p>
+</li>
+</ul>
+<h3 id="you-know-what-the-general-idea-of-the-exponential-growth-model-is-and-how-it-is-related-to-population-growth">You know what the general idea of the exponential growth model is and how it is related to population growth</h3>
+<p>The exponential growth model for a population is</p>
+<p><span class="katex--display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>P</mi><mn>0</mn></msub><msup><mrow><mo fence="true">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>g</mi><mn>100</mn></mfrac><mo fence="true">)</mo></mrow><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">
+P(t)=P_0 \left( 1 + \frac{g}{100} \right)^t
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span style="margin-right: 0.13889em;" class="mord mathnormal">P</span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 2.01946em; vertical-align: -0.686em;"></span><span class="mord"><span style="margin-right: 0.13889em;" class="mord mathnormal">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.13889em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.166667em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top: 0em;"><span class="delimsizing size2">(</span></span><span class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.10756em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord">100</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span style="margin-right: 0.03588em;" class="mord mathnormal">g</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top: 0em;"><span class="delimsizing size2">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 1.33346em;"><span class="" style="top: -3.6029em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>where <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">P_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span style="margin-right: 0.13889em;" class="mord mathnormal">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class="" style="top: -2.55em; margin-left: -0.13889em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> is some population count in specific moment in time and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.625em; vertical-align: -0.19444em;"></span><span style="margin-right: 0.03588em;" class="mord mathnormal">g</span></span></span></span></span> is the growth rate in percent at that time of the population.</p>
+<p>It predicts the number of people at some specific point time with constant growth rate. Population grows exponentially because at every point in time the population is bigger than before one and therefore produces even more people than earlier.</p>
+<h3 id="you-can-interpret-and-judge-the-validity-of-the-forecast-model">You can interpret and judge the validity of the forecast model</h3>
+<p>This model takes the growth rate as constant and therefore takes migration and natural growth as constant. It does not take into account extraordinary events as well like war and natural catastrophes where a big number of people can die or on the other sides baby booms.</p>
+<h2 id="age-structures">Age Structures</h2>
+<h3 id="you-are-familiar-with-the-use-and-interpretation-of-age-structure-diagrams-and-their-typical-shapes">You are familiar with the use and interpretation of age structure diagrams and their typical shapes</h3>
+<p>Age structures represent the distribution of the population at different ages. They are typically drawn with different age categories being placed on the y-axis, and on the x-axis is either the total population or the percentage of the population. Age structures are often separated by sex, where on each one of the y-axis is one sex.</p>
+<p>The typical shapes are</p>
+<ul>
+<li>
+<p>The <code>Pagoda shape</code> looks like the roof of a Chinese pagoda building, as it is sharp and has long tails. It indicates high child morality and low longevity, together with very high birth rates…</p>
+</li>
+<li>
+<p>The <code>triangular shape</code> has high birth rates but indicates greater longevity than Pagoda shaped structures.</p>
+</li>
+<li>
+<p>The <code>Bell shape</code> indicates declining birth rates, low death rates and much greater longevity.</p>
+</li>
+<li>
+<p>The <code>Urn shape</code> indicates low birth and death rates and very high longevity.</p>
+</li>
+</ul>
+<h3 id="you-can-explain-which-factors-affect-age-structures-in-what-way">You can explain which factors affect age structures in what way</h3>
+<ul>
+<li>
+<p>The <code>fertelity</code> changes the number of birth rates and pushes the tails of the age structure together.</p>
+</li>
+<li>
+<p>Changes to greater <code>longevity</code> cause the structure to open up in the middle to the top.</p>
+</li>
+<li>
+<p>Changes to <code>death rates</code> widen or squish the categories in the structure that are influent by the change in death rates.</p>
+</li>
+</ul>
+<h3 id="you-can-explain-how-changes-in-the-age-structure-can-affect-a-society">You can explain how changes in the age structure can affect a society</h3>
+<p>Economically well-developed societies get older with their natural growth rate not being above their replacement level, which leads together with greater longevity to there being more old people than young people. The young population will not be able to sustain the older population.</p>
+<h2 id="demographic-transition-model">Demographic Transition Model</h2>
+<h3 id="you-can-explain-the-basic-principle-of-the-demographic-transition-model">You can explain the basic principle of the demographic transition model</h3>
+<p>The demographic transition model represents the pattern that the population of countries has followed as they changed from pre-industrial to industrial countries, and consists of four stages.</p>
+<ul>
+<li>
+<p>In the <code>pre-industrail</code> stage death rates are high due to poor medical supply, sanitation and food supplies paired with high child mortality. So people tend to have many children to compensate, which leads to the population being stable.</p>
+</li>
+<li>
+<p>In the <code>transitional</code> stage death rates drop due to better jobs, medical care, jobs and food supply but people are still accustomed to have many children but now most children survive and the population increases extremely.</p>
+</li>
+<li>
+<p>In the <code>industrial</code> stage death rates stay low, but people start to produce less offspring because they realize that the ones they have, have a higher probability of survival. In addition to that, people start preferring smaller families to concentrate their efforts on fewer children. The higher employment of women and access to birth control also decrease the birth rates. As a consequence, the population starts to even out at a higher level.</p>
+</li>
+<li>
+<p>In the <code>post-industrial</code> stage, the birth rates and death rates even out and the population does not change over time.</p>
+</li>
+</ul>
+<h3 id="you-know-how-it-was-developed-and-what-it-is-based-on">You know how it was developed and what it is based on</h3>
+<p>The model was developed in 1929 using observation of 200 years of human birth and death rates in industrially developed countries.</p>
+<h3 id="you-can-judge-the-validity-of-the-model">You can judge the validity of the model</h3>
+<p>We stand with the problem of overpopulation and can not wait for industrialization and modernization to lower the birth rates to the birth rates because many countries have started to create family planning programs to negatively affect the birth rate.</p>
+<p>We also do not know if the model developed on western countries can be adapted to other cultures and countries.</p>
+<p>The most important fact is that with greater globalization, migration has become easier and more common, which is not included in the mode.</p>
+<h2 id="demography-in-europe">Demography in Europe</h2>
+<h3 id="you-know-about-the-general-situation-regarding-birth-rates-andor-fertility-in-germany-france-italy-sweden">You know about the general situation regarding birth rates and/or fertility in Germany, France, Italy, Sweden</h3>
+<ul>
+<li>
+<p>In <code>Germany</code> birth rates are below the replacement level, especially in Eastern Germany, due to the fact there are not enough children facilities and the ones present are expensive. In addition, the society views mothers who do not look after their children and send them childcare as <em>bad mothers</em>.</p>
+</li>
+<li>
+<p>In <code>France</code> the birth rates are at the replacement level and the social acceptance for having children in childcare facilities is high. In addition, the childcare is affordable.</p>
+</li>
+<li>
+<p>In <code>Italy</code> the birth rates are below the replacement level where the social acceptance of having children in childcare is low and men are not supportive in housework.</p>
+</li>
+<li>
+<p>In <code>Sweeden</code> the birth rates are at the replacement level and the society is very flexible regarding childcare.</p>
+</li>
+</ul>
+<h3 id="you-know-about-the-measures-these-countries-have-implemented-to-mitigate-declining-birth-rates">You know about the measures these countries have implemented to mitigate declining birth rates</h3>
+<ul>
+<li>
+<p>In <code>Germany</code> some childcare facilities have been created but are very expensive, which rises the question of women having a career and children.</p>
+</li>
+<li>
+<p>In <code>France</code> the state pushes childbirths to have a population advantage which for which they have implemented affordable childcare and financial benefits. This raises the question of how much the state should support having babies.</p>
+</li>
+<li>
+<p>In <code>Italy</code> no measures have been implemented which also leads to the opposite question then in France, how much support by the state is appropriate and how much one should stick to the traditional role models?</p>
+</li>
+<li>
+<p>In <code>Sweeden</code> very flexible leave has been created for both parents which shows great benefits in future child development. This has benefited gender equality but came at the expense of high taxes.</p>
+</li>
+</ul>
+</div>
+        <footer>
+            <a href="../../impressum/impressum.html">Impressum</a>
+            <p>© Adam Koprek 2024</p>
+        </footer>
+</body>
+
+</html>
