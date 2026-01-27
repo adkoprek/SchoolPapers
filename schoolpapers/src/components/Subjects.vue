@@ -1,9 +1,18 @@
 <script setup lang="ts">
-defineProps({
+import { watch, onMounted } from 'vue';
+import { RouterLink } from 'vue-router';
+
+const props = defineProps({
     subjects: {
         type: Array<{ subject: string; logo: string }>,
         required: true
     }
+});
+
+watch(props, () => { console.log("Subjects updated:", props.subjects); });
+
+onMounted(() => {
+    console.log("Subjects component mounted with subjects:", props.subjects);
 });
 </script>
 
@@ -11,7 +20,7 @@ defineProps({
     <main class="flex-1">
         <div class="max-w-4/5 mx-auto px-6">
             <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <div v-for="subject in subjects" :key="subject.subject"
+                <RouterLink :to="`/subject/${subject.subject.toLocaleLowerCase()}`" v-for="subject in subjects" :key="subject.subject"
                     class="group flex items-center gap-8
                         bg-white rounded-3xl p-8
                         border border-gray-100
@@ -19,7 +28,6 @@ defineProps({
                         hover:shadow-xl
                         transition-all duration-300
                         cursor-pointer">
-
                     <div class="flex items-center justify-center
                             min-w-24 min-h-24 rounded-2xl
                             bg-gray-100 group-hover:bg-gray-200
@@ -33,7 +41,7 @@ defineProps({
                     <p class="text-2xl font-semibold text-gray-800">
                     {{ subject.subject }}
                     </p>
-                </div>
+                </RouterLink>
             </div>
         </div>
     </main>

@@ -1,0 +1,80 @@
+{
+  "biologie": {
+    "title": "Biologie",
+    "logo": "/logos/biologie.svg",
+    "items": [
+      "BEZ - Blut & Atmung",
+      "BEZ - Ernährung",
+      "BEZ - Ökosysteme",
+      "BEZ - Sexualkunde",
+      "BEZ - Sinne",
+      "BEZ - Genetik",
+      "BEZ - Evolution",
+      "GYM - Zellen & Pflanzen"
+    ]
+  },
+  "physik": {
+    "title": "Physik",
+    "logo": "/logos/physik.svg",
+    "items": [
+      "BEZ - Kräfte I",
+      "BEZ - Kräfte II",
+      "BEZ - Energie",
+      "BEZ - Elektrische Lehere",
+      "BEZ - Indunktion",
+      "BEZ - Schall",
+      "GYM - SI & Optics",
+      "GYM - Kinematics"
+    ]
+  },
+  "chemie": {
+    "title": "Chemie",
+    "logo": "/logos/chemie.svg",
+    "items": [
+      "BEZ - Stoffe",
+      "BEZ - Bindungen",
+      "GYM - Elektronenpaarbindung",
+      "GYM - Zwischenmolekularkräfte",
+      "GYM - Reaktionen",
+      "GYM - Reaktionsgeschwindigkeit",
+      "GYM - Säure & Base"
+    ]
+  },
+  "geschichte": {
+    "title": "Geschichte",
+    "logo": "/logos/geschichte.svg",
+    "items": [
+      "BEZ - Renaissance",
+      "BEZ - Erster Weltkrieg",
+      "BEZ - Zweiter Weltkrieg",
+      "GYM - Kloster Wettingen",
+      "GYM - Renaissance",
+      "GYM - Aufklärung & USA"
+    ]
+  },
+  "geographie": {
+    "title": "Geographie",
+    "logo": "/logos/geographie.svg",
+    "items": [
+      "BEZ - Plattentektonik",
+      "BEZ - Sonnensystem",
+      "BEZ - USA",
+      "GYM - Atmosphäre",
+      "GYM - Klima & Wetter",
+      "GYM - Demography"
+    ]
+  },
+  "wirtschaft": {
+    "title": "Wirtschaft",
+    "logo": "/logos/wirtschaft.svg",
+    "items": [
+      "BEZ - Arbeit",
+      "BEZ - Zubereitungsarten",
+      "BEZ - Lebensmittelzubereitung",
+      "BEZ - Handel",
+      "BEZ - Märkte",
+      "GYM - Versicherung & Banken",
+      "GYM - Staatskunde & Recht"
+    ]
+  }
+}

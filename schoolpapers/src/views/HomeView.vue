@@ -1,22 +1,16 @@
 <script setup lang="ts">
 import Subjects from "@/components/Subjects.vue";
 import Footer from "@/components/Footer.vue";
-import physikLogo from "@/assets/physik.svg";
-import biologieLogo from "@/assets/biologie.svg";
-import chemieLogo from "@/assets/chemie.svg";
-import geographieLogo from "@/assets/geographie.svg";
-import geschichteLogo from "@/assets/geschichte.svg";
-import wirtschaftLogo from "@/assets/wirtschaft.svg";
+
 
 const subjects: Array<{ subject: string; logo: string }> = [
-    {subject: "Physik",     logo: physikLogo    },
-    {subject: "Biologie",   logo: biologieLogo  },
-    {subject: "Chemie",     logo: chemieLogo    },
-    {subject: "Geographie", logo: geographieLogo},
-    {subject: "Geschichte", logo: geschichteLogo},
-    {subject: "Wirtschaft", logo: wirtschaftLogo},
+    {subject: "Physik",     logo: "/logos/physik.svg" },
+    {subject: "Biologie",   logo: "/logos/biologie.svg" },
+    {subject: "Chemie",     logo: "/logos/chemie.svg" },
+    {subject: "Geographie", logo: "/logos/geographie.svg" },
+    {subject: "Geschichte", logo: "/logos/geschichte.svg" },
+    {subject: "Wirtschaft", logo: "/logos/wirtschaft.svg" },
 ]; 
-
 </script>
 
 <template>
