@@ -8,18 +8,12 @@ const props = defineProps({
         required: true
     }
 });
-
-watch(props, () => { console.log("Subjects updated:", props.subjects); });
-
-onMounted(() => {
-    console.log("Subjects component mounted with subjects:", props.subjects);
-});
 </script>
 
 <template>
     <main class="flex-1">
-        <div class="max-w-4/5 mx-auto px-6">
-            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div class="flex max-w-4/5 mx-auto px-6 justify-center">
+            <div class="grid flex-wrap gap-8 w-fit grid-cols-4">
                 <RouterLink :to="`/subject/${subject.subject.toLocaleLowerCase()}`" v-for="subject in subjects" :key="subject.subject"
                     class="group flex items-center gap-8
                         bg-white rounded-3xl p-8
@@ -27,7 +21,7 @@ onMounted(() => {
                         shadow-sm
                         hover:shadow-xl
                         transition-all duration-300
-                        cursor-pointer">
+                        cursor-pointer min-w-85">
                     <div class="flex items-center justify-center
                             min-w-24 min-h-24 rounded-2xl
                             bg-gray-100 group-hover:bg-gray-200

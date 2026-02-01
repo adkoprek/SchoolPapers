@@ -15,7 +15,7 @@ const subjects: Array<{ subject: string; logo: string }> = [
 
 <template>
     <div class="min-h-screen flex flex-col bg-gray-50">
-        <header class="py-16 text-center">
+        <header class="py-16 pb-28 text-center">
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-800">
                 School Papers
             </h1>

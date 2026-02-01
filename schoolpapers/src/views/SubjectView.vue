@@ -50,7 +50,7 @@ async function setContent() {
     </header>
 
     <main class="flex-1">
-      <div class="max-w-6xl mx-auto px-6 mt-6">
+      <div class="max-w-6xl mx-auto px-6 mt-15">
         <div class="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <button
             v-for="item in items"
