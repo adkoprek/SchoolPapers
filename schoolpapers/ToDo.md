@@ -1,0 +1,5 @@
+- [ ] Fix mermaid in uploader
+- [x] Upload
+- [ ] Add logos to supabase
+- [ ] Adjust pages
+- [ ] Fix design
